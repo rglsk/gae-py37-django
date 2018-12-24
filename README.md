@@ -16,5 +16,5 @@ Simple local and dev setup for application based on top of Google Cloud Platform
 ## Installation
 
 Docker setup
-`docker compose up` 
+`docker-compose up` 
 
