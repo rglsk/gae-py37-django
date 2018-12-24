@@ -1,0 +1,4 @@
+cron:
+- description: "Log each Task"
+  url: /cron/tasks/log
+  schedule: every 24 hours

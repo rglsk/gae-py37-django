@@ -1,0 +1,7 @@
+Django==2.1.1
+djangorestframework==3.8.2
+psycopg2==2.7.4
+django-redis==4.9.0
+drf-extensions==0.4.0
+redis==2.10.6
+google-cloud-tasks==0.4.0

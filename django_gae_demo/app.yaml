@@ -1,0 +1,22 @@
+runtime: python37
+
+handlers:
+- url: /static
+  static_dir: static/
+- url: .*
+  script: auto
+- url: /cron.*
+  script: auto
+  login: required
+
+env_variables:
+  POSTGRESQL_CONNECTION_NAME: PROJECT_ID:REGION:INSTANCE_NAME
+  POSTGRES_DB: [DB_NAME]
+  POSTGRES_PASSWORD: [DB_PASSWORD]
+  POSTGRES_USER: [DB_USER]
+  POSTGRES_HOST: [DB_HOST]
+  REDISHOST: [REDIS_HOST]
+  REDISPORT: [REDIS_PORT]
+
+basic_scaling:
+  max_instances: 2
